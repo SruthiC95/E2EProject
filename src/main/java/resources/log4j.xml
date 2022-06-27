@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+	<Properties>
+		<Property name="basePath">./logs</Property>
+	</Properties>
+
+	<!-- Appenders tag is used for where to log and How to log the results like "Console" or "File" -->
+
+	<Appenders>
+		
+		<RollingFile name="File" fileName="${basePath}/prints.log"	filePattern="${basePath}/prints-%d{yyyy-MM-dd}.log">
+			<PatternLayout	pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="500" />
+		</RollingFile>
+
+	</Appenders>
+
+	<!-- Loggers tag is used for what to log whether it is "error" or "trace" -->
+
+	<Loggers>
+
+		<Root level="trace">
+			<AppenderRef ref="File" />
+		</Root>
+	</Loggers>
+</Configuration>

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 61.859 s <<< FAILURE! - in TestSuite
+basePage(WebPage.ApplicationTest)  Time elapsed: 17.05 s  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at WebPage.ApplicationTest.basePage(ApplicationTest.java:57)
+
+basePage(WebPage.ApplicationTest)  Time elapsed: 25.276 s  <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at WebPage.ApplicationTest.basePage(ApplicationTest.java:57)
+
